@@ -93,3 +93,8 @@ var questions = [
   }
 ]
 
+startButton.addEventListener("click", gameStart);
+nextButton.addEventListener("click", () => {
+  currentQ++;
+  nextQuestion();
+})
