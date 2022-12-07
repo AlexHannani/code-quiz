@@ -1,0 +1,20 @@
+var startButton = document.getElementById("starting-button");
+var timeEl = document.getElementById("time-count");
+var nextButton = document.getElementById("next-button");
+var randomQ, currentQ;
+var answerEL = document.getElementById("answers");
+var scoreBoard = document.getElementById("submit-form");
+var userScore = JSON.parse(localStorage.getItem("scores")) || [];
+var scoreLink = document.getElementById("hs-link");
+var restartButton = document.getElementById("restart-button");
+var timeLeft = 90;
+var startingBlock = document.getElementById("starting-block");
+var timeClock;
+var qContainer = document.getElementById("question-block");
+var questionEl = document.getElementById("question");
+var verifyEl = document.getElementById("verify");
+var scoreCont = document.getElementById("score-container");
+var count = 0;
+var submitBtn = document.getElementById("submit-button");
+var resetScore = document.getElementById("clear-score");
+
