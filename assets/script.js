@@ -98,3 +98,13 @@ nextButton.addEventListener("click", () => {
   currentQ++;
   nextQuestion();
 })
+
+// Game Timer
+function time() {
+  timeLeft--;
+  timeEl.textContent = "Time: " + timeLeft;
+  if (timeLeft === 1) {
+    scoreSaved();
+  }
+}
+
